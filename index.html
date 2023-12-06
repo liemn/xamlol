@@ -1,96 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Chuyên trị các bạn xamlol</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-quarter img{margin-bottom: -6px; cursor: pointer}
-.w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
-</style>
-</head>
-<body class="w3-light-grey">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
-  <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a> 
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a> 
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
-</nav>
-
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16" style="text-align: center">
-  <span>CHÀO CÁC BẠN</span>
-  <div>TÔI LÀ <span style="font-size: 32px; color: red">HIỂN ĐÁ BÀO</span></div>
-  <div>TÔI CAM KẾT TÔI KHÔNG XAM LOL !!!</div>
-</header>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main w3-content" style="max-width:1600px;margin-top:140px">
-  
-  <!-- Photo grid -->
-  <div class="w3-row w3-grayscale-min">
-    <div class="w3-quarter">
-      <img src="hien/1.JPG" style="width:100%" onclick="onClick(this)" alt="Say bét tè lè nhè">
-      
-   </div>
-   <div class="w3-quarter">
-      
-      <img src="hien/2.JPG" style="width:100%" onclick="onClick(this)" alt="Gục ngã">
-      
-   </div>
-   <div class="w3-quarter">
-      <img src="hien/3.JPG" style="width:100%" onclick="onClick(this)" alt="Sang vì bạn & giàu vì vợ">
-   </div>
-    <div class="w3-quarter">
-      <img src="hien/4.jpeg" style="width:100%" onclick="onClick(this)" alt="Một thời trai trẻ">
-   </div>
-   <!-- 
-   <div class="w3-quarter">
-      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
-    </div>
-
-    <div class="w3-quarter">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-    </div>
-    -->
-  </div>
-
-
-  <!-- Footer -->
-  <!--
-  <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>INFO</h3>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+<nav>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12 column-md-10">
+        <p id="highlight">Katherine Kato</p>
+      </div>
+      <div class="column-xs-12 column-md-2">
+        <ul>
+          <li><a href="#" class="active">Work</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
-  -->
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by @Liem 18t 18cm</a></div>
-
-<!-- End page content -->
-</div>
-
-</script>
-</body>
-</html>
+  </div>
+</nav>
+<section class="gallery">
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12 column-md-4">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
+          <figcaption class="img-content">
+            <h2 class="title">Smart Watch</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Smart Watch</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/5VXH4RG88gc" />
+          <figcaption class="img-content">
+            <h2 class="title">Camera Film</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Camera Film</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-4">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/XtUd5SiX464">
+          <figcaption class="img-content">
+            <h2 class="title">Coffee</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Coffee</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/JYGnB9gTCls" />
+          <figcaption class="img-content">
+            <h2 class="title">Phone</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Phone</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12 column-md-6">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
+          <figcaption class="img-content">
+            <h2 class="title">Keyboard</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Keyboard</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+      <div class="column-xs-12">
+        <figure class="img-container">
+          <img src="https://source.unsplash.com/P44RIGl9V54" />
+          <figcaption class="img-content">
+            <h2 class="title">Wrist Watch</h2>
+            <h3 class="category">Showcase</h3>
+          </figcaption>
+          <span class="img-content-hover">
+            <h2 class="title">Wrist Watch</h2>
+            <h3 class="category">Showcase</h3>
+          </span>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="grid">
+      <div class="column-xs-12">
+        <ul class="social">
+          <li><a href="https://twitter.com/kato_katherine" target="_blank" rel="noopener noreferrer"><span class="fab fa-twitter"></span></a></li>
+          <li><a href="https://codepen.io/kathykato" target="_blank" rel="noopener noreferrer"><span class="fab fa-codepen"></span></a></li>
+          <li><a href="https://github.com/kathykato" target="_blank" rel="noopener noreferrer"><span class="fab fa-github"></span></a></li>
+        </ul>
+        <p class="copyright">&copy; Copyright 2018 Katherine Kato</p>
+      </div>
+    </div>
+  </div>
+</footer>
